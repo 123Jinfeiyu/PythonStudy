@@ -72,3 +72,50 @@ leap=0
 # if (leap == 1) and (month > 2):
 #     sum += 1
 # print('it is the %dth day.' % sum)
+import time
+# #斐波那契数列
+# def faberi(n):
+#     #这个条件可以n<=2
+#     if n==1 or n==2:
+#         return 1
+#     else:
+#         #可以改阶乘
+#         return faberi(n-1)+faberi(n-2)
+# start=time.time()
+# print(faberi(40))
+# end=time.time()
+# print(f'{end-start}秒')
+
+#动态规划
+# def fibonacci(n):
+#     fib = [0] * (n + 1)
+#     print(f'创建了{len(fib)}个元素')
+#     print(fib[0])
+#     fib[1] = 1
+#     for i in range(2, n + 1):
+#         fib[i] = fib[i - 1] + fib[i - 2]
+#     return fib[n]
+# result = fibonacci(10)
+#指定个数
+# def fib(n):
+#     if n == 1:
+#         return [1]
+#     if n == 2:
+#         return [1, 1]
+#     fibs = [1, 1]
+#     for i in range(2, n):
+#         fibs.append(fibs[-1] + fibs[-2])
+#     return fibs
+# 输出前 10 个斐波那契数列
+# print(fib(3))
+#简单for循环
+# !/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+# def fib(n):
+#     a, b = 1, 1
+#     for i in range(n - 1):
+#         a, b = b, a + b
+#     return a
+# # 输出了第10个斐波那契数列
+# print(fib(10))
