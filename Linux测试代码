@@ -1,0 +1,26 @@
+# i=0
+# sum=0
+# while(i<=100):
+#     if(i%2==0):
+#         sum+=i;
+#         i += 1;
+#     else:
+#         i += 1;
+# # print(sum)
+# for i in range(0,101):
+#     if(i%2==0):
+#         sum+=i;
+# print(sum)
+# while(i<=100):
+#         sum+=i;
+#         i += 2;
+# print(sum)
+# /bin/bash
+# sum=0
+# for ((i=0; i<=100; i++))
+# do
+#    if ((i % 2==0));then
+#      sum=$((i+sum))
+#    fi
+# done
+# echo "偶数和为:$sum"
