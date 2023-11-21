@@ -163,3 +163,48 @@ print(list2)
 # for i in a:
 #       c.append(i)
 # print(c)
+#九九乘法表
+# for i in range(1,10):
+#     print
+#     for j in range(1,10):
+#            print("%d*%d=%d"%(i,j,i*j),end=" ")
+# !/usr/bin/python3
+
+# for i in range(1, 10):
+#     #控制运算的次数也是打印的行数
+#     print(i)
+#     for j in range(1, i + 1):
+#         print("%d*%d=%d" % (i, j, i * j), end=" ")
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+# ls = []
+# for i in range(9):
+#     s = []
+#     for j in range(i+1):
+#         s.append("{}*{}={}".format(i+1, j+1, (i+1)*(j+1)))
+#     s = ' '.join(s)
+#     ls.append(s)
+#     if i != 8:
+#         ls.append('\n')
+# print(''.join(ls))
+# for j in range(9):
+#     i = 1
+#     j = j + 1
+#     while(i<=j):
+#         s = j*i
+#         print('%dx%d=%d'%(i,j,s),end=' ')
+#         i = i + 1
+#     print(' ')
+# i=0
+# j=0
+# while i<9:
+#     i+=1
+#     while j<9:
+#         j+=1
+#         print(j,"x",i,"=",i*j,"\t",end="")
+#         if i==j:
+#             j=0
+#             print("\t")
+#             #等价print("")
+#             break
