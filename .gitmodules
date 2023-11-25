@@ -1,0 +1,3 @@
+[submodule "pypvz"]
+	path = pypvz
+	url = https://github.com/123Jinfeiyu/PythonStudy.git
