@@ -208,3 +208,57 @@ print(list2)
 #             print("\t")
 #             #等价print("")
 #             break
+import time
+#! /usr/bin/python
+# _*_ coding:UTF-8 _*_
+myDict={1:'a',2:'b'}
+print(dict.items(myDict))#dict_items([(1, 'a'), (2, 'b')])
+for key,value in dict.items(myDict):
+    print(key,value)
+    time.sleep(1)
+list=[1,2,3,4]
+for i in range(len(list)):
+    print(list[i])
+    time.sleep(1)
+#.....集合，元组..。
+#时间的格式化
+print('当前时间未格式化',time.localtime(time.time()))
+print(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))
+time.sleep(1)
+print(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))
+# 类似斐波那契数列12 specifies the minimum width of the field, meaning the output will be padded with spaces on the left if the number is shorter than 12 characters.
+# ld indicates that the variable is a long integer.
+f1=f2=1
+for i in range(1,22):
+    print('%12ld %12ld'%(f1,f2))
+    if(i%3)==0:
+        print('')
+    f1=f1+f2
+    f2=f1+f2
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-#
+#递归做，非常慢。计算n=36就要大概七八秒吧
+def fib(n):
+    if n==1 or n==2:
+        return 1
+    else:
+        return fib(n-1)+fib(n-2)
+print (fib(36))
+h = 0
+leap = 1
+from math import sqrt
+from sys import stdout
+for m in range(101,201):
+    k = int(sqrt(m + 1))
+    for i in range(2,k + 1):
+        if m % i == 0:
+            leap = 0
+            break
+    if leap == 1:
+        # printed with a minimum width of 4 characters
+        print ('%-4d' % m)
+        h += 1
+        if h % 10 == 0:
+            print ('')
+    leap = 1
+print ('The total is %d' % h)
